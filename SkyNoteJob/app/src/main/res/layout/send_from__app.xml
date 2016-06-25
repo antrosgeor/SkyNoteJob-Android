@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgr">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.antrosgeor.skynotejob.Send_from_App">
+
+    <TextView
+        android:id="@+id/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Send_Mail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignBottom="@+id/imageavatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageavatar"
+        android:layout_toStartOf="@+id/imageavatar" />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapThumbnail
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageavatar"
+        android:layout_margin="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/no_avatar"
+        android:contentDescription="@string/avatar_user"/>
+
+    <TextView
+        android:id="@+id/typeSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/email_OR_phone"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/TextTitle"
+        android:layout_alignRight="@+id/imageavatar"
+        android:layout_alignEnd="@+id/imageavatar"
+        android:layout_alignLeft="@+id/TextTitle"
+        android:layout_alignStart="@+id/TextTitle" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/input_layout_email"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true">
+        <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/write_message"
+        android:layout_marginTop="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Send_Mail"
+        android:background="@drawable/button_add_design"
+        android:layout_below="@+id/input_layout_editText"
+        android:layout_alignRight="@+id/input_layout_editText"
+        android:layout_alignEnd="@+id/input_layout_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:onClick="SendButton"/>
+
+    <TextView
+        android:id="@+id/FirstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/TextTitle"
+        android:layout_alignStart="@+id/TextTitle"
+        android:layout_alignRight="@+id/imageavatar"
+        android:layout_alignEnd="@+id/imageavatar" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/typeSend"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/TitleMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_alignLeft="@+id/typeSend"
+                android:layout_alignStart="@+id/typeSend"
+                android:layout_alignRight="@+id/typeSend"
+                android:layout_alignEnd="@+id/typeSend"
+                android:hint="@string/Email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/backgr" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.antrosgeor.skynotejob.Change_profile">
+
+
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:id="@+id/ImageAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/no_avatar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/avatar_user"
+            app:bootstrapBrand="primary"
+            app:hasBorder="true"
+            android:text="medium"/>
+
+        <TextView
+            android:id="@+id/Textfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_below="@+id/ImageAvatar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/ImageAvatar"
+            android:layout_toStartOf="@+id/ImageAvatar" />
+
+        <TextView
+            android:id="@+id/TextLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_below="@+id/EditFirst"
+            android:layout_alignLeft="@+id/Textfirst"
+            android:layout_alignStart="@+id/Textfirst"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/ImageAvatar"
+            android:layout_toStartOf="@+id/ImageAvatar" />
+
+        <TextView
+            android:id="@+id/TextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textStyle="bold|italic"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/TextLast"
+            android:layout_alignLeft="@+id/TextLast"
+            android:layout_alignStart="@+id/TextLast"
+            android:layout_alignRight="@+id/TextLast"
+            android:layout_alignEnd="@+id/TextLast" />
+
+        <TextView
+            android:id="@+id/TextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/EditEmail"
+            android:layout_alignBottom="@+id/EditPass"
+            android:layout_alignLeft="@+id/TextEmail"
+            android:layout_alignStart="@+id/TextEmail" />
+
+        <TextView
+            android:id="@+id/TextMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Mobile_Phone"
+            android:layout_below="@+id/EditPass"
+            android:layout_alignLeft="@+id/TextPassword"
+            android:layout_alignStart="@+id/TextPassword"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/TextWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Word_Phone"
+            android:layout_below="@+id/EditMobile"
+            android:layout_alignLeft="@+id/TextMobile"
+            android:layout_alignStart="@+id/TextMobile"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/EditFirst"
+            android:layout_toStartOf="@+id/EditFirst" />
+
+        <EditText
+            android:id="@+id/EditFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_alignBottom="@+id/Textfirst"
+            android:layout_toRightOf="@+id/TextMobile"
+            android:layout_toEndOf="@+id/TextMobile"
+            android:layout_alignRight="@+id/update"
+            android:layout_alignEnd="@+id/update"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditFirst"
+            android:layout_alignStart="@+id/EditFirst"
+            android:layout_alignRight="@+id/EditFirst"
+            android:layout_alignEnd="@+id/EditFirst"
+            android:inputType="text"
+            android:layout_above="@+id/TextEmail"
+            android:layout_below="@+id/EditFirst" />
+
+        <EditText
+            android:id="@+id/EditEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditLast"
+            android:layout_alignStart="@+id/EditLast"
+            android:layout_alignRight="@+id/EditLast"
+            android:layout_alignEnd="@+id/EditLast"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/EditLast" />
+
+        <EditText
+            android:id="@+id/EditPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditEmail"
+            android:layout_alignStart="@+id/EditEmail"
+            android:layout_alignRight="@+id/EditEmail"
+            android:layout_alignEnd="@+id/EditEmail"
+            android:inputType="textPassword"
+            android:layout_below="@+id/EditEmail" />
+
+        <EditText
+            android:id="@+id/EditMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditPass"
+            android:layout_alignStart="@+id/EditPass"
+            android:layout_alignRight="@+id/EditPass"
+            android:layout_alignEnd="@+id/EditPass"
+            android:inputType="number"
+            android:layout_below="@+id/TextPassword" />
+
+        <EditText
+            android:id="@+id/EditWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditMobile"
+            android:layout_alignStart="@+id/EditMobile"
+            android:layout_alignRight="@+id/EditMobile"
+            android:layout_alignEnd="@+id/EditMobile"
+            android:inputType="number"
+            android:layout_below="@+id/EditMobile" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:onClick="update"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/button_design"
+            android:textColor="@color/ColorWhite"
+            android:layout_below="@+id/EditNotes"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/TextMobile"
+            android:layout_alignStart="@+id/TextMobile" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Address"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_below="@+id/EditWord"
+            android:layout_marginTop="20dp"
+            android:layout_alignBottom="@+id/EditAddress"
+            android:layout_toLeftOf="@+id/EditFirst"
+            android:layout_toStartOf="@+id/EditFirst"
+            android:layout_alignLeft="@+id/TextWord"
+            android:layout_alignStart="@+id/TextWord" />
+
+        <EditText
+            android:id="@+id/EditAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_alignLeft="@+id/EditWord"
+            android:layout_alignStart="@+id/EditWord"
+            android:layout_alignRight="@+id/EditWord"
+            android:layout_alignEnd="@+id/EditWord"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/EditWord" />
+
+        <TextView
+            android:id="@+id/textNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notes"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/texrview_profile_TextSize"
+            android:layout_below="@+id/EditAddress"
+            android:layout_alignLeft="@+id/textAddress"
+            android:layout_alignStart="@+id/textAddress" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/EditNotes"
+            android:layout_alignLeft="@+id/textNotes"
+            android:layout_alignStart="@+id/textNotes"
+            android:layout_alignRight="@+id/update"
+            android:layout_alignEnd="@+id/update"
+            android:layout_below="@+id/textNotes"
+            android:inputType="textPostalAddress" />
+
+    </RelativeLayout>
+</ScrollView>

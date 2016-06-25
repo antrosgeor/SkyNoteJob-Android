@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_map"
+        android:title="@string/action_map"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_help"
+        android:title="@string/action_help"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/submenu"
+        android:title="Send Mail"
+        android:orderInCategory="4"
+        android:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/action_Mail_admin"
+                android:title="@string/Send_Mail"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_forgot_password"
+                android:title="@string/forgot_password"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

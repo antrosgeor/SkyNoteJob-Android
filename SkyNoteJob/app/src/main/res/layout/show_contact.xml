@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.antrosgeor.skynotejob.ShowContact"
+    android:background="@drawable/backgr">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+                <com.beardedhen.androidbootstrap.BootstrapThumbnail                    android:id="@+id/imageavatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/no_avatar"
+                    android:layout_below="@+id/Text_Title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/avatar_user"/>
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@+id/imageavatar"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Email"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/Name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/mailbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:textColor="@color/ColorWhite"
+                    android:text="@string/Send_Mail"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_below="@+id/Email"
+                    android:layout_toRightOf="@+id/imageavatar"
+                    android:layout_toEndOf="@+id/imageavatar"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mailbutton"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Address"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/mailbutton"
+                    android:layout_alignEnd="@+id/mailbutton" />
+
+                <TextView
+                    android:id="@+id/mphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Mobile_Phone"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/address"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/address"
+                    android:layout_alignEnd="@+id/address" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/mphone"
+                    android:id="@+id/RelativeForButton">
+
+                        <Button
+                            android:id="@+id/Send_SMS"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_warning_design"
+                            android:text="@string/sms"
+                            android:textSize="20sp"
+                            android:paddingLeft="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:src="@android:drawable/stat_notify_chat"
+                            android:textColor="@color/ColorWhite"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <Button
+                            android:id="@+id/Call"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/button_add_design"
+                            android:textColor="@color/ColorWhite"
+                            android:clickable="false"
+                            android:baselineAlignBottom="false"
+                            android:text="@string/call"
+                            android:paddingLeft="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:textSize="20sp"
+                            android:contextClickable="false"
+                            android:focusable="false" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/wphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Word_Phone"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/RelativeForButton"
+                    android:layout_alignRight="@+id/mphone"
+                    android:layout_alignEnd="@+id/mphone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeForButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/wphone">
+
+                        <Button
+                            android:id="@+id/Calla"
+                            android:layout_width="130dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:clickable="false"
+                            android:baselineAlignBottom="false"
+                            android:text="@string/call"
+                            android:textSize="20sp"
+                            android:paddingLeft="15dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:paddingRight="15dp"
+                            android:background="@drawable/button_add_design"
+                            android:textColor="@color/ColorWhite"
+                            android:contextClickable="false"
+                            android:focusable="false" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/notes"
+                    android:layout_marginTop="29dp"
+                    android:layout_below="@+id/RelativeForButton1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/Text_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/title"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/Remember_Contact_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Note"
+            android:layout_marginTop="15dp"
+            android:text="@string/remember_member"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/button_add_design"
+            android:textColor="@color/ColorWhite"
+            />
+
+        </RelativeLayout>
+</ScrollView>

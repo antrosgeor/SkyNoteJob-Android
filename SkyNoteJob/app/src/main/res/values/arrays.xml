@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <string-array name="pref_units_options">
+            <item>@string/pref_units_label_english</item>
+            <item>@string/pref_units_label_greece</item>
+        </string-array>
+
+        <string-array name="pref_units_values">
+            <item>@string/pref_units_english</item>
+            <item>@string/pref_units_greece</item>
+        </string-array>
+    </resources>
